@@ -28,4 +28,9 @@ __Summary of My Process__
   - Logloss and error charts (XGBoost)
 10. Test predictions and competition submission
 
+## Results Log
+__11 July 2022:__ XGBoost + GridSearchCV + KFold; 78.625% accuracy on competition data.
+- Minimal feature engineering- split Cabin variable, no transformation of spending variables.
 
+__18 July 2022:__ XGBoost + GridSearchCV; 79.985% accuracy on competition data.
+- Large model version- split PassengerId and Cabin variables, used missingness indicators, log(x+1) transformation of spending variables. All variables retained regardless of collinearity and VIF scores.
