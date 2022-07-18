@@ -29,7 +29,7 @@ __Summary of My Process__
 10. Test predictions and competition submission
 
 ## Results Log
-__11 July 2022:__ XGBoost + GridSearchCV + KFold; 78.625% accuracy on competition data.
+__11 July 2022:__ XGBoost + GridSearchCV + KFold; 78.629% accuracy on competition data.
 - Minimal feature engineering- split Cabin variable, no transformation of spending variables.
 
 __18 July 2022:__ XGBoost + GridSearchCV; 79.985% accuracy on competition data.
