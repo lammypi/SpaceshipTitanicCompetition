@@ -11,17 +11,21 @@ Aside from choosing different classification methods, the major differences in m
 __Summary of My Process__
 1. Load and review data
   - Data provided in CSV format
-  - Null and unique value checks for train and test sets
+  - Null, unique, and duplicate value checks for train and test sets
 2. Clean data
   - Replace missing values
     - Categorical variables used most_frequent
     - Continuous variables used mean (Age) and median (all other continuous variables)
 3. Feature engineering
-  - Parsing variables that seemed to be combinations of other potential variables of interest (PassengerId, Cabin)
+  - Parsing variables that seemed to be combinations of other potential variables of interest (example: PassengerId, Cabin)
+  - Combining variables (example: summing variables that tracked category spending per user)
+  - Missingness indicators
 7. Model building and finalization
   - Split training set into training and validation sets with validation equal to different amounts depending on the model size (20% or 10%).
   - Combination of GridSearchCV and StratifiedKFold to find the best parameter set from training.
 9. Training and validation
+  - Classification reports
+  - Logloss and error charts (XGBoost)
 10. Test predictions and competition submission
 
 
